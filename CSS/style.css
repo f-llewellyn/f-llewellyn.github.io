@@ -102,7 +102,13 @@ body{
         width: 100%;
         float: none;
     }
+    
     #sidebar{
+        width: 100%;
+        float: none;
+    }
+
+    #mainFooter{
         width: 100%;
         float: none;
     }
