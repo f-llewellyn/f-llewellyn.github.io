@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body{
     background-color: white;
     color: rgb(85, 85, 85);
@@ -5,6 +14,10 @@ body{
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
+}
+
+.clr{
+    clear: both;
 }
 
 .container{
@@ -23,11 +36,11 @@ body{
 }
 
 .button:hover{
-    background-color: coral;
+    background-color: green;
 }
 
 #myHeader{
-    background-color: coral;
+    background-color: green;
     color: white;
 }
 
@@ -61,6 +74,8 @@ body{
 #showcase{
     background-image: url("../Images/showcase.jpg");
     background-position: center right;
+    background-size: 100% 100%;
+    color: white;
     min-height: 300px;
     margin-bottom: 30px;
     text-align: center;
@@ -95,20 +110,19 @@ body{
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 @media(max-width: 600px){
+
     #main{
         width: 100%;
         float: none;
     }
     
     #sidebar{
-        width: 100%;
-        float: none;
-    }
-
-    #mainFooter{
         width: 100%;
         float: none;
     }
