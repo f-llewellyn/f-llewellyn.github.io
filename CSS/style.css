@@ -25,6 +25,11 @@ body {
   overflow: hidden;
 }
 
+.container a{
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+
 #navbar .container {
   margin: 0;
 }
