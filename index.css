@@ -100,9 +100,9 @@ body {
 }
 
 #showcase {
-  background-image: url("../Images/showcase.jpg");
+  background-image: url("../Images/showcase3.jpg");
   background-position: center right;
-  background-size: contain;
+  background-size: cover;
   color: white;
   min-height: 300px;
   margin-bottom: 30px;
