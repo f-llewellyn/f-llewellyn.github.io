@@ -7,7 +7,7 @@ const msg = [
     "1.21 Giggawatts!?!?!",
     "Asta la vista, baby",
     "Somebody once told me",
-    "Did you ever hear the tragedy of Dart Plagius the wise?",
+    "Did you ever hear the tragedy of Darth Plagius the wise?",
     "In space, no one can hear you scream",
     "sudo rm-rf",
     "rm C:\Windows\System32",
