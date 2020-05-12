@@ -9,7 +9,7 @@ body {
     flex-flow: column;
     padding: 0px;
     margin: 0px;
-    background-image: url("/images/background-image.jpg");
+    background-image: url("./images/background-image.jpg");
     background-size: 110%;
     background-position: top left;
 }
