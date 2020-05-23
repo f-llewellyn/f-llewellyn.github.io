@@ -1,75 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Finn Llewellyn</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header id="myHeader">
-          <div class="container">
-            <h1>Finn Llewellyn</h1>
-          </div>
-        </header>
-      
-        <nav id="navbar">
-          <div class="container">
-            <ul>
-              <li><a class="button" id="dev">KirkOpedia</a></li>
-              <li><a class="button" href="rickroll/rick.html">Rickroll Test</a></li>
-            </ul>
-          </div>
-        </nav>
-      
-        <div class="main-content">
-          <section id="showcase">
-            <div class="container">
-              <h2 id="MOTD"></h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <title>Finn Llewellyn</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div>
+                <!-- Hamburger Lines -->
             </div>
-          </section>
-      
-          <div class="flex-cont">
-            <div class="item">
-              <h3>Contacts</h3>
-              <h4>Email: <a href="mailto:llewellynfinn@gmail.com">llewellynfinn@gmail.com</a></h4>
-              <h4>Instagram: <a href="https://www.instagram.com/fin.ifus/">@fin.ifus</a></h4>
-              <h4>GitHub: <a href="https://github.com/f-llewellyn">f-llewellyn</a></h4>
-
-            </div>
-            <div class="item">
-              <h3>Projects</h3>
-              <ul>
-                <li>Youtube downloader written in python</li>
-                <li>The site you're currently viewing</li>
-                <li>Learn Javascript</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3>The Future</h3>
-              <ul>
-                <li>Get a job</li>
-                <li>Learn React Framework</li>
-                <li>Learn SQL</li>
-                <li>Rickroll everyone in the world at once</li>
-                <li>Vote for the green party</li>
-                <li>Become a full stack developer</li>
-                <li>Learn the entire script of Revenge Of The Sith</li>
-                <li>Research renewable energy</li>
-                <li>Play Half-Life 3</li>
-                <li>Attempt not to die due to global warming</li>
-              </ul>
-            </div>
-          </div>
-        </div>     
-        <div id="mainFooter">
-          <p>
-            Credits to: 
-            <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">Traversy Media</a> and 
-            <a href="">W3Schools</a> (for js), 
-            <a href="https://www.jakpost.travel/vwall/wwbRho_3840x2504-green-leaves-4k-wallpaper-and-background-close/">jakpost</a> (for the image)
-            and the great people <a href="https://youtu.be/dQw4w9WgXcQ">here</a>
-          </p>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a onclick="homeFunc()" href="javascript:void(0)">Home</a></li>
+                        <li><a onclick="aboutFunc()" href="javascript:void(0)">About</a></li>
+                        <li><a onclick="futureFunc()" href="javascript:void(0)">Plans for the future</a></li>
+                        <li><a onclick="contactFunc()" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="showcase">
+        <div class="container showcase-inner">
+            <h1>Hello!</h1>
+            <p>
+                Hello, my name is Finn, and this is my website.
+            </p>
+            <a target="_blank" href="https://github.com/f-llewellyn" class="btn" id="git">Github</a>
+            <a target="_blank" href="https://www.instagram.com/fin.ifus/?hl=en" class="btn" id="insta">Instagram</a>
+
+        </div>
+    </header>
+    <script src="./script.js"></script>
+</body>
 </html>
