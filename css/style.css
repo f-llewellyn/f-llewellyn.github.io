@@ -69,12 +69,18 @@ body{
 .showcase p {
     font-size: 1.3rem;
     margin: 10px 0;
+    max-width: 25em;
     position: relative;
     animation-name: content;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 1;
     transition: opacity 1s ease-out;
+}
+
+.showcase p a {
+    text-decoration: none;
+    color: greenyellow;
 }
 
 @keyframes content {
