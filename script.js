@@ -11,7 +11,7 @@ function editClass() {
     title.classList.add("fade");
     content.classList.add("fade");
     
-    // Waits 500 milliseconds to remove class, and set menu to unchecked, therefore closing the menu
+    // Waits 1000 milliseconds to remove class, and set menu to unchecked, therefore closing the menu
     setTimeout(() => {  
         title.classList.remove("fade");
         content.classList.remove("fade");
