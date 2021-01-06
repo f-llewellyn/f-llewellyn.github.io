@@ -1,0 +1,69 @@
+$primaryColour: #555;
+$secondaryColour: #239c0b;
+$showHomeImage: true;
+$homeImage: url("../img/background.jpg");
+$backgroundOpacity: 0.75;
+
+// Mixin
+@mixin ease_out {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $showHomeImage {
+    &#bg-img {
+      background: $homeImage;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($primaryColour, $backgroundOpacity);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+// Set Text Colour
+@function setTextColour($colour) {
+  @if (lightness($colour) > 40) {
+    @return #444;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width:600px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width:1171px) {
+    @content;
+  }
+}
+
+.flex {
+  display: flex;
+}
