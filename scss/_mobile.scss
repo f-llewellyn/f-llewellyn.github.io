@@ -87,4 +87,15 @@
     .projects {
         grid-template-columns: 1fr;
     }
+
+    .about-info {
+        
+        .bio {
+            font-size: larger;
+        }
+    }
+
+    .dev-desc {
+        font-size: large;
+    }
 }
