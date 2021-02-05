@@ -256,6 +256,14 @@ main#home h1 {
   font-size: 2rem;
 }
 
+.dev-desc {
+  font-size: 1.5rem;
+}
+
+.dev-desc a {
+  color: #239c0b;
+}
+
 .languages {
   flex-wrap: wrap;
   justify-content: center;
@@ -436,5 +444,11 @@ main#home h1 {
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  .about-info .bio {
+    font-size: larger;
+  }
+  .dev-desc {
+    font-size: large;
   }
 }
