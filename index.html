@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/svg+xml" href="./img/FL-logo.svg">
     <title>F.L. Web Development | Get on the web!</title>
+    <script src="https://unpkg.com/@botpoison/browser"></script>
 </head>
 <body>
     <header class="hero">      
@@ -90,7 +91,10 @@
             <section class="contact" id="contact">
                 <h2>Contact</h2>
                 <p>You can request a quote, or enquire about one if you need more information, using the form below. I will try to respond as quickly as possible.</p>
-                <form action="https://submit-form.com/X7okytTw">
+                <form 
+                    action="https://submit-form.com/X7okytTw"
+                    data-botpoison-public-key="pk_f7fd5ed7-5354-4f3a-9877-b3e1daadd815"
+                >
                 <div class="contact-grid">
                     <input type="text" name="Name" id="name" placeholder="Name" required="">
                     <input type="email" name="email" id="email" placeholder="Email" required="">
@@ -99,6 +103,7 @@
                 <button class="btn" type="submit">SEND MESSAGE</button>
                 </form>
             </section>
+
         </div>
 
     
@@ -107,6 +112,20 @@
     <footer>
         <p>Designed and developed by <a href="https://fllewellyn.com" target="_">Finn Llewellyn</a></p>
     </footer>
-
+<!-- 
+    <script>
+        var formElement = document.getElementById("form");
+        var buttonElement = document.getElementById("button");
+        formElement.addEventListener("botpoison-challenge-start", function () {
+            buttonElement.setAttribute("disabled", "disabled");
+        });
+        formElement.addEventListener("botpoison-challenge-success", function () {
+            buttonElement.removeAttribute("disabled");
+        });
+        formElement.addEventListener("botpoison-challenge-error", function () {
+            buttonElement.removeAttribute("disabled");
+        });
+    </script> -->
+</section>
 </body>
 </html>
