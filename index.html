@@ -7,102 +7,157 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/svg+xml" href="./img/FL-logo.svg">
-    <title>F.L. Web Development | Get on the web!</title>
+    <title>Finn Llewellyn | Get on the web!</title>
     <script src="https://unpkg.com/@botpoison/browser"></script>
 </head>
 <body>
-    <header class="hero">      
-        <img class="logo" src="./img/FL-logo-lg-light.svg" alt="F.L. Web Development">
-        <nav>
-            <ul>
-                <li>SERVICES</li>
-                <li>QUOTES</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-        <article>
-            <h1>Get on the web!</h1>
-            <p>My name is Finn and I’m a Web Developer from High Wycombe, currently based in Chesterfield. If you want to gain some online presence for your new start-up, or an overhaul for your aging website, find out more below!</p>
-        </article>
-        <div class="hero-btns">
-            <a href="#quotes"><button class="quote-btn btn"><h3>QUOTES</h3><i class="fas fa-chevron-right"></i></button></a>
-            <a href="#services"><button class="scnd-btn srv-btn"><h3>SERVICES</h3><i class="fas fa-chevron-right"></i></button></a>
+    
+    <nav class="hidden">
+        <ul>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-minimize close" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="5 9 9 9 9 5" />
+                <line x1="3" y1="3" x2="9" y2="9" />
+                <polyline points="5 15 9 15 9 19" />
+                <line x1="3" y1="21" x2="9" y2="15" />
+                <polyline points="19 9 15 9 15 5" />
+                <line x1="15" y1="9" x2="21" y2="3" />
+                <polyline points="19 15 15 15 15 19" />
+                <line x1="15" y1="15" x2="21" y2="21" />
+            </svg>
+            
+            <li><a href="./">
+                <h3>Home</h3>
+            </a></li>
+            
+            <li><a href="./services.html">
+                <h3>Services</h3>
+            </a></li>
+            
+            <li><a href="./#quotes" class="menu-quote">
+                <button class="btn scnd-btn">Get a Quote <i class="fas fa-chevron-right"></i></button>
+            </a></li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <div class="container">
+            <div class="logo-container">
+                <a class="logo-link" href="./">
+                    <img class="logo" src="./img/FL-logo.svg" alt="F.L. Web Development">
+                    <h1>Finn <br> Llewellyn</h1>
+                </a>
+                <div class="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                </div>
+            </div>
+            
+            <div class="header-container">
+                <div>
+                    <article>
+                        <h1>Get on the web!</h1>
+                        <p>Helping you unlock the potential of your business.</p>
+                    </article>
+                    <div class="hero-btns">
+                        <a href="#quotes"><button class="quote-btn btn"><h3>Get a Quote <i class="fas fa-chevron-right"></i></h3></button></a>
+                        <a href="./services.html"><button class="btn scnd-btn srv-btn"><h3>All Services <i class="fas fa-chevron-right"></i></h3></button></a>
+                    </div>
+                </div>
+                <img class="portrait" src="./img/website-thing.png" alt="portrait of me">
+            </div>
         </div>
-
     </header>
 
     <main>
         
         <section class="services" id="services">
             
-            <h2>Services</h2>
+            <h1>Want to see the process?</h1>
             
             <div class="srv-grid">
+                <div class="process">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ear ear" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 10a7 7 0 1 1 13 3.6a10 10 0 0 1 -2 2a8 8 0 0 0 -2 3a4.5 4.5 0 0 1 -6.8 1.4" />
+                        <path d="M10 10a3 3 0 1 1 5 2.2" />
+                    </svg>
+                    <h2>Listen</h2>
+                    <p>
+                        It’s all about you and your business. I’ll listen to your requirements so we’re both on the same page.
+                    </p>
+                </div>
 
-                <article class="service-text design">
-                    <div class="title design-title">
-                        <i class="fas fa-drafting-compass"></i>
-                        <h3>Design</h3>
-                    </div>
-                    <p>Eyecatching, clean and modern designs, garanteed to grab you more customers. I’ll produce a free home page design as part of your quote. What a bargain!</p>
-                </article>
-                
+                <div class="process">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eyeglass-2" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 4h-2l-3 10v2.5" />
+                        <path d="M16 4h2l3 10v2.5" />
+                        <line x1="10" y1="16" x2="14" y2="16" />
+                        <circle cx="17.5" cy="16.5" r="3.5" />
+                        <circle cx="6.5" cy="16.5" r="3.5" />
+                    </svg>
+                    <h2>Analyse</h2>
+                    <p>
+                        What needs doing? I’ll look through your requirements to find the best way to help you.
+                    </p>
+                </div>
 
-                <article class="service-text development">
-                    <p>Web pages developed to run on any modern device, that are optimised for maximum performance and fantastic search engine intergration to help your presence grow.</p>
-                    <div class="title dev-title">
-                        <i class="fas fa-code"></i>
-                        <h3>Develop</h3>
-                    </div>
-                </article>
+                <div class="process">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle-square-circle" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 3l-4 7h8z" />
+                        <circle cx="17" cy="17" r="3" />
+                        <rect x="4" y="14" width="6" height="6" rx="1" />
+                    </svg>
+                    <h2>Build</h2>
+                    <p>
+                        I take over from here. Using cutting edge technologies, I’ll create your site in no time
+                    </p>
+                </div>
+
+                <div class="process">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rocket" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+                        <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+                        <circle cx="15" cy="9" r="1" />
+                      </svg>
+                    <h2>Deploy</h2>
+                    <p>
+                        Finally, I’ll upload your site to a server set up and maintained by me, allowing people across the internet to see it.
+                    </p>
+                </div>
                 
-                <article class="service-text mobile">
-                    <div class="title mobile-title">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Responsive</h3>
-                    </div>
-                    <p>These days, so many devices are used for web browsing and that's why I ensure that all projects are responsive and scale well to any screen size, tiny phone and huge TV alike.</p>
-                </article>
             </div>
             
-            <a href="#contact"><button class="btn lrn-srv-btn"><h4>LEARN MORE</h4></button></a>
+            <a href="./services.html"><button class="btn"><h3>Learn More <i class="fas fa-chevron-right"></i></h3></button></a>
         
         </section>
 
         <div class="bottom-container">
             <section class="quotes" id="quotes">
-            
-                <h2>Quotes</h2>
-                
-                <p>My quotes include the following items as standard:</p>
-                <br>
-                <ul>
-                    <li>Unlimited email communication</li>
-                    <li>A phone appointment for up to 1 hour</li>
-                    <li>A homepage design mockup (wireframe)</li>
-                </ul>
-                <p>All free of charge!</p>
-    
-                <i class="far fa-file-alt"></i>
+                <h2>Quotes</h2>  
+                <section class="contact" id="contact">
+                    <form 
+                        action="https://submit-form.com/X7okytTw"
+                        data-botpoison-public-key="pk_f7fd5ed7-5354-4f3a-9877-b3e1daadd815"
+                    >
+                    <div class="contact-grid">
+                        <input type="text" name="Name" id="name" placeholder="Name" required="">
+                        <input type="email" name="email" id="email" placeholder="Email" required="">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required=""></textarea> 
+                    </div>
+                    <button class="btn scnd-btn req-quote-btn" type="submit"><h3>Submit Request</h3></button>
+                    </form>
+                </section>
+                <i class="far fa-file-alt fa-5x quote-icon"></i>
+            </section>
 
-                <a href="#contact"><button class="scnd-btn req-quote-btn"><h5>REQUEST A QUOTE</h5></button></a>
-            </section>
-    
-            <section class="contact" id="contact">
-                <h2>Contact</h2>
-                <p>You can request a quote, or enquire about one if you need more information, using the form below. I will try to respond as quickly as possible.</p>
-                <form 
-                    action="https://submit-form.com/X7okytTw"
-                    data-botpoison-public-key="pk_f7fd5ed7-5354-4f3a-9877-b3e1daadd815"
-                >
-                <div class="contact-grid">
-                    <input type="text" name="Name" id="name" placeholder="Name" required="">
-                    <input type="email" name="email" id="email" placeholder="Email" required="">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required=""></textarea> 
-                </div>
-                <button class="btn" type="submit">SEND MESSAGE</button>
-                </form>
-            </section>
 
         </div>
 
@@ -112,20 +167,7 @@
     <footer>
         <p>Designed and developed by <a href="https://fllewellyn.com" target="_">Finn Llewellyn</a></p>
     </footer>
-<!-- 
-    <script>
-        var formElement = document.getElementById("form");
-        var buttonElement = document.getElementById("button");
-        formElement.addEventListener("botpoison-challenge-start", function () {
-            buttonElement.setAttribute("disabled", "disabled");
-        });
-        formElement.addEventListener("botpoison-challenge-success", function () {
-            buttonElement.removeAttribute("disabled");
-        });
-        formElement.addEventListener("botpoison-challenge-error", function () {
-            buttonElement.removeAttribute("disabled");
-        });
-    </script> -->
-</section>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
