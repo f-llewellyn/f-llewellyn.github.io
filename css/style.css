@@ -275,6 +275,36 @@ p {
     max-width: 40ch;
 }
 
+.project {
+    margin: 2rem 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.project h2 {
+    color: var(--green);
+}
+
+.project__img {
+    width: 100%;
+    max-width: 1100px;
+    border: solid 3px var(--dark);
+}
+
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns button {
+    min-width: 100px;
+}
+
+.project .scnd-btn {
+    border-color: var(--dark);
+}
+
 .packages {
     display: flex;
     flex-direction: column;
