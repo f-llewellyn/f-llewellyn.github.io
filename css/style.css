@@ -489,6 +489,16 @@ footer p {
     font-size: 14px;
 }
 
+.quote-text {
+    max-width: 50ch;
+}
+
+.projects-text {
+    font-size: 16px;
+    max-width: 50ch;
+    margin-top: 2rem;
+}
+
 @media screen and (min-width: 768px) {
     .srv-grid {
         /* display: grid;
